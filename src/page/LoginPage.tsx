@@ -22,7 +22,7 @@ export default function LoginPage() {
     const validPassword = "12345678";
 
     if (data.email === validEmail && data.password === validPassword) {
-      sessionStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("isLoggedIn", "true");
       navigate("/homepage");
     } else {
       alert("Email or password incorrect");

@@ -4,7 +4,7 @@ import { RequireAuthProps } from '../interfaces/interfaceLogin'
 
 const RequireAuth: React.FC<RequireAuthProps> = ({ children }) => {
   const navigate = useNavigate();
-  const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
 
   useEffect(() => {
     if (!isLoggedIn) {

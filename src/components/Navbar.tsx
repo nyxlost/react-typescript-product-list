@@ -6,7 +6,7 @@ export default function Navbar({ }: Props) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    sessionStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('isLoggedIn');
     navigate("/");
   }
 

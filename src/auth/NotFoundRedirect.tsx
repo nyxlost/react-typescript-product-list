@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const NotFoundRedirect: React.FC = () => {
   const navigate = useNavigate();
-  const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
 
   useEffect(() => {
     if (!isLoggedIn) {
